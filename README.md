@@ -36,6 +36,8 @@ Scan a room with your iPhone, view it as an interactive 3D model in the browser.
 
 **What it does:** iOS app uses Apple RoomPlan (LiDAR) to scan walls, surfaces, and objects. Scan data is uploaded to Supabase. Web viewer renders the room in 3D with orbit controls, and also displays a 2D floor plan.
 
+<img src="assets/spacely.png" width="600" alt="Spacely screenshot" />
+
 ![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black) ![Zustand](https://img.shields.io/badge/Zustand-433E38?style=flat-square&logo=react&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
 ---
