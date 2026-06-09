@@ -1,9 +1,65 @@
-<h1 align="center">Hi 👋, I'm Jae Won</h1>
-<h3 align="center">A passionate frontend developer from Korea</h3>
+# Jaewon Kwon
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">20214157sch@gmail.com
-</p>
+Frontend-heavy full-stack developer. Building real products with React, TypeScript, and modern backend infrastructure.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.figma.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> </p>
+---
+
+## Projects
+
+### UNIBUS — 대학교 셔틀버스 시스템
+
+Campus shuttle bus tracking and management app for students and administrators.
+
+**What it does:** Real-time bus location tracking on Naver Maps, QR-based boarding, commuter bus schedules, admin dashboard with route management, push notifications, and multilingual support (KO/EN).
+
+**Stack**
+- Frontend: React 19, TypeScript, Tailwind CSS 4, Vite, React Router, Radix UI, Framer Motion
+- Backend: Deno + Hono Framework on Supabase Edge Functions
+- Database: Supabase PostgreSQL
+- Auth: Kakao Login, bcrypt token-based auth
+- Deploy: Vercel
+
+---
+
+### 먹깨비 — 소셜 푸드 다이어리
+
+Take a photo of your food → AI removes the background → physics-powered sticker board shared with friends in real time.
+
+**What it does:** Remove.bg API strips the background from food photos. Gemini AI generates a one-line food description. Stickers land on a physics board with gravity, collision, and bounce. Tilt or shake your phone to move stickers. Friends join via invite code and share the same live board.
+
+**Stack**
+- Frontend: React 19, TypeScript, Tailwind CSS, Vite
+- Backend: Express.js (Node.js)
+- AI: Google Gemini API (food analysis), Remove.bg API (background removal)
+- Database & Auth: Firebase Firestore, Firebase Auth (Kakao OAuth)
+- Push: Firebase Cloud Messaging, Web Push API
+- Maps: Google Maps
+- Deploy: Railway
+
+---
+
+### Spacely — iOS LiDAR → 3D Web Viewer
+
+Scan a room with your iPhone, view it as an interactive 3D model in the browser.
+
+**What it does:** iOS app uses Apple RoomPlan (LiDAR) to scan walls, surfaces, and objects. Scan data is uploaded to Supabase. Web viewer renders the room in 3D with orbit controls, and also displays a 2D floor plan.
+
+**Stack**
+- iOS: Swift, Apple RoomPlan, LiDAR
+- Web: React 19, TypeScript, Three.js (React Three Fiber + Drei), Zustand, GSAP, Vite
+- Database: Supabase PostgreSQL
+- Deploy: Vite static build
+
+---
+
+## Skills
+
+**Languages:** TypeScript, JavaScript, Swift  
+**Frontend:** React, Tailwind CSS, Three.js, Framer Motion, Radix UI  
+**Backend:** Deno, Hono, Express.js, Node.js  
+**Database:** Supabase (PostgreSQL), Firebase Firestore  
+**Tools:** Vite, Git, Vercel, Railway, Supabase Edge Functions
+
+---
+
+> Always building something.
