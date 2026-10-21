@@ -61,8 +61,6 @@
 
 ### 02 / Spacely
 
-<img src="assets/spacely.png" width="800" alt="Spacely 공간 뷰어 화면">
-
 **LiDAR 스캔에서 3D 공간 편집까지.** iPhone으로 스캔한 방을 웹에서 확인하고 가구 배치를 수정합니다.
 
 - Apple RoomPlan 스캔 → Supabase 저장 → 웹의 **3D·2D 평면 뷰**로 연결
@@ -84,23 +82,13 @@
 
 ### 03 / 먹깨비
 
-<table>
-<tr>
-<td width="230" align="center">
-<img src="assets/meokgaebi.png" width="190" alt="먹깨비 음식 스티커 보드 화면">
-</td>
-<td valign="top">
-<h3>친구들과 함께 쓰는 소셜 푸드 다이어리</h3>
-<p>음식 사진을 배경 없는 스티커로 만들고, 물리 효과가 있는 보드에 함께 기록합니다.</p>
-<ul>
-<li>Remove.bg 배경 제거와 Gemini 음식 한 줄 평</li>
-<li>중력·충돌·탄성, 기울이기·흔들기에 반응하는 스티커</li>
-<li>초대 코드 그룹, 댓글·반응, 기록 통계와 위치 지도</li>
-</ul>
-<p><b>React · TypeScript · Express · Firestore · Gemini · Google Maps</b></p>
-</td>
-</tr>
-</table>
+**친구들과 함께 쓰는 소셜 푸드 다이어리.** 음식 사진을 배경 없는 스티커로 만들고, 물리 효과가 있는 보드에 함께 기록합니다.
+
+- Remove.bg 배경 제거와 Gemini 음식 한 줄 평
+- 중력·충돌·탄성, 기울이기·흔들기에 반응하는 스티커
+- 초대 코드 그룹, 댓글·반응, 기록 통계와 위치 지도
+
+**React · TypeScript · Express · Firestore · Gemini · Google Maps**
 
 <details>
 <summary>구현 내용 더 보기</summary>
@@ -117,7 +105,7 @@
 
 | 프로젝트 | 구현 내용 | 기술 |
 | :--- | :--- | :--- |
-| [Interactive Learning Lab](https://github.com/ddingddong9/interact_hp) | 자료구조·경쟁 상태·원자적 연산 시뮬레이터, Java·C·Python 실행 시각화 | React · TypeScript · SVG |
+| [Interactive Learning Lab](https://ddingddong9.store) | 자료구조·경쟁 상태·원자적 연산 시뮬레이터, Java·C·Python 실행 시각화 | React · TypeScript · SVG |
 | [Flask Board](https://github.com/ddingddong9/board-vagrant) | Vagrant VM 배포용 게시판·텍스트 분류 앱, TF-IDF와 Naive Bayes 모델 학습 | Python · Flask · MySQL · scikit-learn |
 
 ## Tech Stack
