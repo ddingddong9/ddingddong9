@@ -1,10 +1,56 @@
 # Jaewon Kwon
 
-Frontend-focused full-stack developer building interactive learning tools and web apps with React and TypeScript. My projects also explore Python backends, machine learning, and iOS-to-web 3D experiences.
+Frontend-focused full-stack developer building interactive learning tools, campus services, and spatial web experiences. I work mainly with React and TypeScript, connecting interfaces to real-time data, Python backends, and native iOS scanning.
+
+## Projects
+
+### [UNIBUS SCH](https://github.com/Unibus-sch/unibus-sch) — 순천향대학교 셔틀버스 앱
+
+A mobile web app for campus shuttles and commuter buses, with separate workflows for students, drivers, and administrators.
+
+- **Passenger experience:** Naver Maps bus tracking, stop-by-stop arrival estimates, commuter route schedules and fares, PAYCO booking links, and the Sinchang train timetable.
+- **Driver workflow:** Start and end trips, collect GPS coordinates and heading, and send location updates every five seconds.
+- **Operations:** Manage buses, routes, notices, users, and support requests; monitor active trips and the latest GPS reception in the admin dashboard.
+- **Recent improvements:** Smoother route-following animation for campus and commuter buses, multiple-bus map views, and admin status aligned with the live map.
+- **App features:** Kakao login, Korean/English interfaces, PWA installation, and Web Push notifications for notices.
+
+<img src="assets/unibus.png" width="220" alt="UNIBUS mobile app screenshot" />
+
+**Stack:** React · TypeScript · Vite · Tailwind CSS · Framer Motion · Naver Maps · Supabase PostgreSQL / Realtime · Deno / Hono · Vercel
 
 ---
 
-## Recent Projects
+### Spacely — LiDAR 스캔·3D 공간 편집
+
+Scan an indoor space with an iPhone and explore or edit the room in a browser.
+
+- **Scan to web:** Apple RoomPlan captures walls and objects; converted room data is uploaded to Supabase and rendered in the web viewer.
+- **Spatial viewer:** Switch between interactive 3D and a 2D floor plan, with walls, doors, windows, object labels, and dimensions.
+- **Room editing:** Add or delete objects, drag and rotate furniture, edit object properties, undo position changes, and persist edits to Supabase.
+- **Expanded workflow:** Import OBJ meshes and use Gemini-assisted scene analysis to generate structured room data.
+- **Presentation:** A monochrome landing page and viewer, with lighting and floor-material controls.
+
+<img src="assets/spacely.png" width="600" alt="Spacely room viewer screenshot" />
+
+**Stack:** Swift · Apple RoomPlan · React · TypeScript · Three.js · React Three Fiber / Drei · Zustand · GSAP · Supabase · Gemini
+
+---
+
+### 먹깨비 — 소셜 푸드 다이어리
+
+Turn food photos into stickers and collect them on a shared physics board with friends.
+
+- **Photo to sticker:** Remove.bg removes the background and Gemini generates a short food description.
+- **Physics interactions:** Gravity, bounce, and sticker collisions, with tilt and shake input and frame-rate-independent animation.
+- **Shared diary:** Invite-code groups, a shared board and activity feed, comments, and reactions.
+- **Food history:** Recording streaks, category statistics, weekly activity charts, and a Google Maps view of photo locations.
+- **Mobile experience:** Kakao OAuth login, PWA installation, and layouts adapted to iOS safe areas.
+
+<img src="assets/meokgaebi.png" width="220" alt="먹깨비 shared food sticker board screenshot" />
+
+**Stack:** React · TypeScript · Vite · Tailwind CSS · Node.js / Express · Firebase Firestore · Gemini · Remove.bg · Google Maps · Railway
+
+---
 
 ### [Interactive Learning Lab](https://github.com/ddingddong9/interact_hp) — 자료구조·코드 실행 시각화
 
@@ -27,58 +73,6 @@ Flask board applications used as source for automatic deployment into a Vagrant 
 - Environment-based database configuration and training scripts that generate models during installation.
 
 **Stack:** Python · Flask · MySQL · scikit-learn
-
----
-
-### [iPad Photo Booth](https://github.com/ddingddong9/photobooth-sch) — 네 컷 사진 웹앱
-
-A browser-based photo booth for capturing and saving four-cut photos on iPad.
-
-- Camera capture with a countdown, four-photo composition, and retakes.
-- Frame image generation and PNG downloads with Canvas and html2canvas.
-- A local gallery saved in the browser with localStorage.
-
-**Stack:** React · JavaScript · react-webcam · Canvas · html2canvas
-
-[Live demo](https://photobooth-sch.vercel.app)
-
----
-
-## More Projects
-
-### UNIBUS — 대학교 셔틀버스 시스템
-
-Campus shuttle bus tracking and management app for students and administrators.
-
-**What it does:** Real-time bus location tracking on Naver Maps, QR-based boarding, commuter bus schedules, admin dashboard with route management, push notifications, and multilingual support (KO/EN).
-
-<img src="assets/unibus.png" width="220" alt="UNIBUS screenshot" />
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white) ![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white) ![Radix UI](https://img.shields.io/badge/Radix_UI-161618?style=flat-square&logo=radixui&logoColor=white) ![Deno](https://img.shields.io/badge/Deno-000000?style=flat-square&logo=deno&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
-
----
-
-### 먹깨비 — 소셜 푸드 다이어리
-
-Take a photo of your food → AI removes the background → physics-powered sticker board shared with friends in real time.
-
-**What it does:** Remove.bg API strips the background from food photos. Gemini AI generates a one-line food description. Stickers land on a physics board with gravity, collision, and bounce. Tilt or shake your phone to move stickers. Friends join via invite code and share the same live board.
-
-<img src="assets/meokgaebi.png" width="220" alt="먹깨비 screenshot" />
-
-![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white) ![Express](https://img.shields.io/badge/Express-000000?style=flat-square&logo=express&logoColor=white) ![Firebase](https://img.shields.io/badge/Firebase-FFCA28?style=flat-square&logo=firebase&logoColor=black) ![Gemini AI](https://img.shields.io/badge/Gemini_AI-8E75B2?style=flat-square&logo=google&logoColor=white) ![Google Maps](https://img.shields.io/badge/Google_Maps-4285F4?style=flat-square&logo=googlemaps&logoColor=white) ![Railway](https://img.shields.io/badge/Railway-0B0D0E?style=flat-square&logo=railway&logoColor=white)
-
----
-
-### Spacely — iOS LiDAR → 3D Web Viewer
-
-Scan a room with your iPhone, view it as an interactive 3D model in the browser.
-
-**What it does:** iOS app uses Apple RoomPlan (LiDAR) to scan walls, surfaces, and objects. Scan data is uploaded to Supabase. Web viewer renders the room in 3D with orbit controls, and also displays a 2D floor plan.
-
-<img src="assets/spacely.png" width="600" alt="Spacely screenshot" />
-
-![Swift](https://img.shields.io/badge/Swift-F05138?style=flat-square&logo=swift&logoColor=white) ![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black) ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white) ![Three.js](https://img.shields.io/badge/Three.js-000000?style=flat-square&logo=threedotjs&logoColor=white) ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=flat-square&logo=greensock&logoColor=black) ![Zustand](https://img.shields.io/badge/Zustand-433E38?style=flat-square&logo=react&logoColor=white) ![Supabase](https://img.shields.io/badge/Supabase-3ECF8E?style=flat-square&logo=supabase&logoColor=white)
 
 ---
 
